@@ -1,0 +1,11 @@
+br\com\alura\school\domain\student\valueobjects\Email.class
+br\com\alura\school\application\StudentController.class
+br\com\alura\school\domain\student\entity\Student.class
+br\com\alura\school\infraestructure\service\StudentServiceImp.class
+br\com\alura\school\domain\student\builder\StudentBuilder.class
+br\com\alura\school\domain\student\valueobjects\CPF.class
+br\com\alura\school\infraestructure\JpaStudentRepository.class
+br\com\alura\school\domain\indcation\Indication.class
+br\com\alura\school\domain\student\valueobjects\PhoneNumber.class
+br\com\alura\school\StudentApplication.class
+br\com\alura\school\domain\student\IStudentService.class

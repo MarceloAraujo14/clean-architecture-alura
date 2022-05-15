@@ -1,0 +1,4 @@
+br\com\alura\school\domain\student\builder\StudentBuilderTest.class
+br\com\alura\school\domain\student\valueobjects\PhoneNumberTest.class
+br\com\alura\school\domain\student\valueobjects\CPFTest.class
+br\com\alura\school\domain\student\valueobjects\EmailTest.class

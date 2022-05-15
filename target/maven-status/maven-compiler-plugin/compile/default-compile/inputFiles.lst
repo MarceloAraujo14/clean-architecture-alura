@@ -1,0 +1,11 @@
+N:\ws-desenvolvimento\ws-intellij\alura\courses\java-clean-architecture\src\main\java\br\com\alura\school\application\StudentController.java
+N:\ws-desenvolvimento\ws-intellij\alura\courses\java-clean-architecture\src\main\java\br\com\alura\school\domain\student\builder\StudentBuilder.java
+N:\ws-desenvolvimento\ws-intellij\alura\courses\java-clean-architecture\src\main\java\br\com\alura\school\domain\student\valueobjects\PhoneNumber.java
+N:\ws-desenvolvimento\ws-intellij\alura\courses\java-clean-architecture\src\main\java\br\com\alura\school\StudentApplication.java
+N:\ws-desenvolvimento\ws-intellij\alura\courses\java-clean-architecture\src\main\java\br\com\alura\school\infraestructure\service\StudentServiceImp.java
+N:\ws-desenvolvimento\ws-intellij\alura\courses\java-clean-architecture\src\main\java\br\com\alura\school\domain\indcation\Indication.java
+N:\ws-desenvolvimento\ws-intellij\alura\courses\java-clean-architecture\src\main\java\br\com\alura\school\domain\student\valueobjects\Email.java
+N:\ws-desenvolvimento\ws-intellij\alura\courses\java-clean-architecture\src\main\java\br\com\alura\school\domain\student\valueobjects\CPF.java
+N:\ws-desenvolvimento\ws-intellij\alura\courses\java-clean-architecture\src\main\java\br\com\alura\school\infraestructure\JpaStudentRepository.java
+N:\ws-desenvolvimento\ws-intellij\alura\courses\java-clean-architecture\src\main\java\br\com\alura\school\domain\student\entity\Student.java
+N:\ws-desenvolvimento\ws-intellij\alura\courses\java-clean-architecture\src\main\java\br\com\alura\school\domain\student\IStudentService.java
