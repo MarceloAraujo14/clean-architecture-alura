@@ -1,6 +1,6 @@
 package br.com.alura.school.infraestructure.email;
 
-import br.com.alura.school.domain.indcation.email.ISendIndicationEmail;
+import br.com.alura.school.domain.indication.email.ISendIndicationEmail;
 import br.com.alura.school.domain.student.entity.Student;
 
 public class SendIndicationEmail implements ISendIndicationEmail {

@@ -1,4 +1,4 @@
-package br.com.alura.school.domain.indcation;
+package br.com.alura.school.domain.indication;
 
 import br.com.alura.school.domain.student.entity.Student;
 import lombok.AllArgsConstructor;

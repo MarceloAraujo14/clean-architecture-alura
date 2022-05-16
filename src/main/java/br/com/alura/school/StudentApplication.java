@@ -15,9 +15,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class StudentApplication implements CommandLineRunner {
 
     @Autowired
-    private  IStudentService serviceImp;
+    private IStudentService serviceImp;
     @Autowired
-    private  IEncrypt encrypt;
+    private IEncrypt encrypt;
 
 
     public static void main(String[] args) {

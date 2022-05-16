@@ -1,22 +1,20 @@
 package br.com.alura.school.domain.student.entity;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.MappedSuperclass;
 import java.util.Objects;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@MappedSuperclass
 public class User {
 
-    @Column(name = "username")
     private String username;
 
-    @Column(name = "password")
     private String password;
 
     @Override

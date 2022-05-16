@@ -1,4 +1,4 @@
-package br.com.alura.school.application;
+package br.com.alura.school.infraestructure.controller;
 
 import br.com.alura.school.domain.student.controller.IStudentController;
 import br.com.alura.school.domain.student.entity.Student;

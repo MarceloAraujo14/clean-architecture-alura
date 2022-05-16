@@ -1,4 +1,4 @@
-package br.com.alura.school.domain.indcation.email;
+package br.com.alura.school.domain.indication.email;
 
 import br.com.alura.school.domain.student.entity.Student;
 
