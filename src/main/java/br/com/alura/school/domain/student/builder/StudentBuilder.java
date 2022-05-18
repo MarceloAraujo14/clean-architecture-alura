@@ -10,8 +10,8 @@ public class StudentBuilder {
 
     private Student student;
 
-    public StudentBuilder builder(String name, String cpf, String email){
-        this.student = new Student(new CPF(cpf), name, new Email(email));
+    public StudentBuilder builder(String name, String cpf, String email, String username, String password){
+        this.student = new Student(new CPF(cpf), name, new Email(email), username, password);
         return this;
     }
 

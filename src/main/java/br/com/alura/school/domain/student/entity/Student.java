@@ -1,6 +1,7 @@
 package br.com.alura.school.domain.student.entity;
 
 
+import br.com.alura.school.domain.student.exception.AddPhoneNumberException;
 import br.com.alura.school.domain.student.valueobjects.CPF;
 import br.com.alura.school.domain.student.valueobjects.Email;
 import br.com.alura.school.domain.student.valueobjects.PhoneNumber;
@@ -14,30 +15,29 @@ import java.util.List;
 
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
-public class Student extends User{
+public class Student extends User {
 
     private CPF cpf;
     private String name;
     private Email email;
 
-    private List<PhoneNumber> phoneNumbers = new ArrayList<>();
+    private final List<PhoneNumber> phoneNumbers = new ArrayList<>();
 
     public void addPhoneNumber(String ddd, String phoneNumber){
+        if(this.phoneNumbers.size() >= 2){
+            throw new AddPhoneNumberException("Phone number list reach its limit.");
+        }
         this.phoneNumbers.add(new PhoneNumber(ddd, phoneNumber));
     }
 
-    public void addUsernamePassword(String username, String password){
-        this.setPassword(password);
-        this.setUsername(username);
-    }
-
-    public Student(CPF cpf, String name, Email email) {
+    public Student(CPF cpf, String name, Email email,String username,String password) {
+        super(username,password);
         this.cpf = cpf;
         this.name = name;
         this.email = email;
 
     }
+
 
     @Override
     public String toString() {

@@ -1,21 +1,22 @@
 package br.com.alura.school.domain.student.entity;
 
-import lombok.AllArgsConstructor;
+import br.com.alura.school.domain.student.valueobjects.Password;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.util.Objects;
 
 @Getter
-@Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public abstract class User {
 
     private String username;
+    private Password password;
 
-    private String password;
+    protected User(String username, String password) {
+        this.username = username;
+        this.password = new Password(password);
+    }
 
     @Override
     public boolean equals(Object o) {

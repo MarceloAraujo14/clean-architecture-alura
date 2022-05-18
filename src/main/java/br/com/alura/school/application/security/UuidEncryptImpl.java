@@ -10,6 +10,12 @@ import java.util.UUID;
 @Primary
 @Component
 public class UuidEncryptImpl implements IEncrypt {
+
+
+    public static String ENCRYPT(String password){
+        return UUID.nameUUIDFromBytes(password.getBytes(StandardCharsets.UTF_8)).toString();
+    }
+
     @Override
     public String encrypt(String password) {
         return UUID.nameUUIDFromBytes(password.getBytes(StandardCharsets.UTF_8)).toString();

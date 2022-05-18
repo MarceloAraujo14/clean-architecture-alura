@@ -1,7 +1,6 @@
 package br.com.alura.school.infraestructure.rest.student;
 
-import br.com.alura.school.domain.student.entity.Student;
-import br.com.alura.school.application.usecases.student.EnrollStudentDto;
+import br.com.alura.school.application.usecases.student.StudentInput;
 import br.com.alura.school.application.usecases.student.StudentServiceImpl;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -18,15 +17,15 @@ public class StudentRestControllerImpl{
     private final StudentServiceImpl serviceImp;
 
     @PostMapping()
-    public Student enrollStudent(@RequestBody EnrollStudentDto enrollStudentDto){
-        log.info("Enrolling student: " + enrollStudentDto);
-        Student student = enrollStudentDto.toStudent();
-        return serviceImp.enrollStudent(student);
+    public StudentResponse enrollStudent(@RequestBody StudentRequest studentDto){
+        log.info("Enrolling student: " + studentDto);
+        StudentInput student = studentDto.toStudentInput();
+        return new StudentResponse(serviceImp.enrollStudent(student));
     }
 
     @GetMapping
-    public List<Student> listAllStudents(){
-        return serviceImp.listAllStudents();
+    public List<StudentResponse> listAllStudents(){
+        return new StudentResponse().toResponseList(serviceImp.listAllStudents());
     }
 
 }
