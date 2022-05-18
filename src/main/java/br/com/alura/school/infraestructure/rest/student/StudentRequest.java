@@ -26,8 +26,8 @@ public class StudentRequest {
 
     public StudentInput toStudentInput(){
         return new StudentInput(
-                studentCpf,
                 studentName,
+                studentCpf,
                 studentEmail,
                 studentUsername,
                 studentPassword

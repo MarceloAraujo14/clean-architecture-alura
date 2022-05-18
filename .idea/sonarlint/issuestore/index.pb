@@ -1,6 +1,4 @@
 
-v
-Fsrc/main/java/br/com/alura/school/domain/student/valueobjects/CPF.java,1\0\10ecf337b4adec2f18a5ca445f9bb2a62c1fd514
 z
 Jsrc/test/java/br/com/alura/school/domain/student/valueobjects/CPFTest.java,3\b\3b4a3010ca9add9e265c93551293f2a931153877
 |
