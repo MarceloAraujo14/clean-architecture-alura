@@ -1,23 +1,22 @@
 package br.com.alura.school.domain.student.entity;
 
-import lombok.*;
+import br.com.alura.school.domain.student.valueobjects.Password;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.MappedSuperclass;
 import java.util.Objects;
 
 @Getter
-@Setter
-@AllArgsConstructor
 @NoArgsConstructor
-@MappedSuperclass
-public class User {
+public abstract class User {
 
-    @Column(name = "username")
     private String username;
+    private Password password;
 
-    @Column(name = "password")
-    private String password;
+    protected User(String username, String password) {
+        this.username = username;
+        this.password = new Password(password);
+    }
 
     @Override
     public boolean equals(Object o) {

@@ -2,7 +2,6 @@ package br.com.alura.school.domain.student.valueobjects;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.hibernate.Hibernate;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -48,9 +47,9 @@ public class Email implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
-        Email email1 = (Email) o;
-        return address != null && Objects.equals(address, email1.address);
+        if (o == null || getClass() != o.getClass()) return false;
+        Email email = (Email) o;
+        return Objects.equals(address, email.address);
     }
 
     @Override

@@ -9,9 +9,12 @@ public interface IStudentRepository {
 
     Student getStudentByCpf(String cpf);
 
+    Student getStudentByEmail(String email);
+
     List<Student> listAllStudents();
 
     Student enrollStudent(Student student);
+
 
     void unenrollStudent(String cpf);
 }

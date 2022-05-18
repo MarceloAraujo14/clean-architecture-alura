@@ -13,7 +13,7 @@ class StudentBuilderTest {
     @Test
     void StudentBuilder(){
         Student student = new StudentBuilder()
-                .builder("Jhon Doe", "12345678912", "jhon.doe@gmail.com")
+                .builder("Jhon Doe", "12345678912", "jhon.doe@gmail.com", "jhonny", "abcd")
                 .build();
 
         assertInstanceOf(Student.class, student);
@@ -22,10 +22,10 @@ class StudentBuilderTest {
     @Test
     void StudentBuilder2(){
 
-        Student expect = new Student(new CPF("12345678912"), "Jhon Doe", new Email("jhon.doe@gmail.com"));
+        Student expect = new Student(new CPF("12345678912"), "Jhon Doe", new Email("jhon.doe@gmail.com"),"jhonny", "abcd");
 
         Student result = new StudentBuilder()
-                .builder("Jhon Doe", "12345678912", "jhon.doe@gmail.com")
+                .builder("Jhon Doe", "12345678912", "jhon.doe@gmail.com", "jhonny", "abcd")
                 .build();
 
         assertEquals(expect, result);
@@ -34,11 +34,11 @@ class StudentBuilderTest {
     @Test
     void StudentBuilder3(){
 
-        Student expect = new Student(new CPF("12345678912"), "Jhon Doe", new Email("jhon.doe@gmail.com"));
+        Student expect = new Student(new CPF("12345678912"), "Jhon Doe", new Email("jhon.doe@gmail.com"), "jhonny", "abcd");
         expect.addPhoneNumber("21", "9999-99999");
 
         Student result = new StudentBuilder()
-                .builder("Jhon Doe", "12345678912", "jhon.doe@gmail.com")
+                .builder("Jhon Doe", "12345678912", "jhon.doe@gmail.com", "jhonny", "abcd")
                 .addPhoneNumber("21", "9999-99999")
                 .build();
 
